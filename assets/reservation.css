@@ -1,19 +1,26 @@
 img {
-    height: 100%;
-    width: 100%;
+    
 }
 
 .backgroundImage {
-    height: auto;
-    width: auto;
-    background-image: ("gift-card.jpg");
+    height: 500px;
+    width: 900px;
+    background-image: url("assets/img/reservation.jpg");
 }
 
 
 .forms {
-    width: 500px;
+    width: auto ;
     height: auto;
     background-color: #B3A4A7;
-    border: 5px;
-    text-align: center;
+    border: 10px double;
+    text-align: left;
+}
+
+input {
+    width: 300px;
+}
+
+type {
+
 }
