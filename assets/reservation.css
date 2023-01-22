@@ -1,0 +1,19 @@
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.backgroundImage {
+    height: auto;
+    width: auto;
+    background-image: ("gift-card.jpg");
+}
+
+
+.forms {
+    width: 500px;
+    height: auto;
+    background-color: #B3A4A7;
+    border: 5px;
+    text-align: center;
+}
