@@ -56,17 +56,23 @@
           <main>
 
             <div class="backgroundImage">
-                <img src="">
-                <h1>Reservation</h1>
+                <img src="assets/img/reservation.jpg">
+                <h2>Reservation</h1>
                 <p></p>
             </div>
 
             <div class="forms">
             <form action="/action_page.php">
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="date">Date:</label><br>
-                <input type="text" id="date" name="date"><br><br>
+                <input type="text" id="name" name="name">
+                <br>
+                
+                <label for="meeting-time">Choose a date & time:</label><br>
+                <input type="datetime-local" id="meeting-time"
+                name="meeting-time" value="2018-06-12T19:30"
+                min="2018-06-07T00:00" max="2018-06-14T00:00">
+
+                <br><br>
                 
                 <label for="number">Number of guest:</label>
                 <select id="number" name="number">
@@ -75,10 +81,11 @@
                   <option value="4">4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
-                </select> <br> <br>
+                </select> 
+                <br><br>
 
                   <label for="message">More information:</label> <br>
-                  <textarea name="message" rows="10" cols="30"></textarea> <br>
+                  <textarea name="message" rows="10" cols="38"></textarea> <br>
                   
 
                 <input type="submit" value="Submit">
