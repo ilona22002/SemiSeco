@@ -1,13 +1,6 @@
 img {
-    max-width:100%;
-    max-height:100%;
-}
-
-.backgroundImage {
-    max-width:100%;
-    max-height:100%;
-    align-items: stretch;
-    background-image: url("assets/img/reservation.jpg");
+    height: 100%;
+    width: 100%; 
 }
 
 h1 {
@@ -17,18 +10,43 @@ h1 {
 h2 {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 20%;
     color: #FFEBEF;
 }
 
+p {
+    padding: 50px;
+}
+
+.imgBc {
+    max-width: 1000px;
+}
+
 .forms {
-    width: auto ;
-    height: auto;
+
     background-color: #B3A4A7;
-    padding: 6px;
+    padding: 60px;
     text-align: left;
 }
 
-input {
-    width: auto;
+
+#name {
+    min-width: 250px;
+    text-align: center;
+}
+
+#phone {
+
+}
+
+#meeting-time {
+    max-width: 250px;
+}
+
+#message {
+    max-width: 250px;
+}
+
+#number {
+    
 }

@@ -27,7 +27,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">MENU</a>
+                    <a class="nav-link" aria-current="page" href="menu.html">MENU</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">EVENTS</a>
@@ -53,19 +53,26 @@
             </div>
           </nav></header>
 
-          <main>
+          <main class="row">
 
-            <div class="backgroundImage">
-                <img src="assets/img/reservation.jpg" style='height: 100%; width: 100%; object-fit: contain'/>
-                <h2>Reservation</h1>
-                <p></p>
+            <div class="col-8">
+                <div class="imgBc"><img src="assets/img/table-reservation.jpg"></div>
+                <h2>Reservation</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, harum delectus eum quasi similique beatae asperiores nulla 
+                  velit! Modi nihil rem accusantium itaque architecto facere eligendi, dolore repellat asperiores sapiente praesentium possimus 
+                  iusto doloribus amet? Nobis velit voluptas illo facere corporis, reprehenderit vel libero veritatis, aliquam reiciendis rerum 
+                  quos, ipsa sunt quod deserunt et possimus ab hic beatae.</p>
             </div>
 
-            <div class="forms">
-            <form action="/action_page.php">
+            <div class="col-4">
+            <form class="forms" action="/action_page.php">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name">
                 <br>
+
+                <label for="phone">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
                 
                 <label for="meeting-time">Choose a date & time:</label><br>
                 <input type="datetime-local" id="meeting-time"
@@ -85,7 +92,7 @@
                 <br><br>
 
                   <label for="message">More information:</label> <br>
-                  <textarea name="message" rows="10" cols="38"></textarea> <br>
+                  <textarea id="message" name="message" rows="10" cols="38"></textarea> <br>
                   
 
                 <input type="submit" value="Submit">
