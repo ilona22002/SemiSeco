@@ -1,4 +1,6 @@
 img {
+    max-width: 400px;
+    
 }
 
 h1 {
@@ -19,7 +21,6 @@ p {
 .imgBc {
     height: 60%;
     width: 100%;
-    position: fixed;
 }
 
 .forms {
