@@ -1,33 +1,34 @@
 img {
-    
+    max-width:100%;
+    max-height:100%;
 }
 
 .backgroundImage {
-    height: 50%;
-    width: 50%;
+    max-width:100%;
+    max-height:100%;
     align-items: stretch;
     background-image: url("assets/img/reservation.jpg");
+}
+
+h1 {
+    color: #FFEBEF;;
 }
 
 h2 {
     position: absolute;
     top: 50%;
     left: 50%;
+    color: #FFEBEF;
 }
 
 .forms {
     width: auto ;
     height: auto;
     background-color: #B3A4A7;
-    border: 10px double;
+    padding: 6px;
     text-align: left;
-    position: ;
 }
 
 input {
     width: 300px;
-}
-
-type {
-
 }
