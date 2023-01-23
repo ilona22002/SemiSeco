@@ -1,0 +1,33 @@
+img {
+    
+}
+
+.backgroundImage {
+    height: 50%;
+    width: 50%;
+    align-items: stretch;
+    background-image: url("assets/img/reservation.jpg");
+}
+
+h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.forms {
+    width: auto ;
+    height: auto;
+    background-color: #B3A4A7;
+    border: 10px double;
+    text-align: left;
+    position: ;
+}
+
+input {
+    width: 300px;
+}
+
+type {
+
+}
