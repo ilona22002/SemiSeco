@@ -36,9 +36,19 @@ a:hover {
 }
 
 footer  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #736A6C;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    padding: 10px;
+    color: #ffebef;
+    
+}
+
+.Author {
+   margin-left: 50px;
+}
+.about_us {
+    margin-left: 10px;
 }
