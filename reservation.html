@@ -1,3 +1,15 @@
+<?php
+
+if($_POST["message"]) {
+
+mail("ilona22002@student.hamk.fi", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,18 +65,12 @@
             </div>
           </nav></header>
 
-          <main class="row">
+          <main>
 
-            <div class="col-8">
-                <div class="imgBc"><img src="assets/img/table-reservation.jpg"></div>
+            <div class="imgBc"><img src="assets/img/table-reservation.jpg">
                 <h2>Reservation</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, harum delectus eum quasi similique beatae asperiores nulla 
-                  velit! Modi nihil rem accusantium itaque architecto facere eligendi, dolore repellat asperiores sapiente praesentium possimus 
-                  iusto doloribus amet? Nobis velit voluptas illo facere corporis, reprehenderit vel libero veritatis, aliquam reiciendis rerum 
-                  quos, ipsa sunt quod deserunt et possimus ab hic beatae.</p>
             </div>
 
-            <div class="col-4">
             <form class="forms" action="/action_page.php">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name">

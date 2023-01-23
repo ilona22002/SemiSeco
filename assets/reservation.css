@@ -1,6 +1,4 @@
 img {
-    height: 100%;
-    width: 100%; 
 }
 
 h1 {
@@ -19,7 +17,9 @@ p {
 }
 
 .imgBc {
-    max-width: 1000px;
+    height: 60%;
+    width: 100%;
+    position: fixed;
 }
 
 .forms {
@@ -31,8 +31,7 @@ p {
 
 
 #name {
-    min-width: 250px;
-    text-align: center;
+    min-width: 240px;
 }
 
 #phone {
