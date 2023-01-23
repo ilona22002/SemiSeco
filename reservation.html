@@ -1,15 +1,3 @@
-<?php
-
-if($_POST["message"]) {
-
-mail("ilona22002@student.hamk.fi", "Here is the subject line",
-
-$_POST["insert your message here"]. "From: an@email.address");
-
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,11 +55,12 @@ $_POST["insert your message here"]. "From: an@email.address");
 
           <main>
 
-            <div class="imgBc"><img src="assets/img/table-reservation.jpg" width="1296" height="800">
+            <div class="imgBc"><img src="assets/img/table-reservation.jpg" alt="Table reservation" width="1296" height="400"></div>
                 <h2>Reservation</h2>
-            </div>
-
-            <form class="forms" action="/action_page.php">
+              
+            <section class="row">
+            <div class="col-4">
+            <form id="forms" action="/action_page.php">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name">
                 <br>
@@ -103,8 +92,25 @@ $_POST["insert your message here"]. "From: an@email.address");
 
                 <input type="submit" value="Submit">
             </form>
+          
             </div>
 
+            <div class="col-8">
+              <p id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ipsam excepturi similique cupiditate inventore 
+                quae vel totam eaque esse sint odio ipsa quos, nulla ullam impedit necessitatibus, animi id! Vel temporibus vero 
+                atque laborum harum perspiciatis libero, cum deserunt ipsa quos placeat, illum ipsum, sint in a velit. Deleniti 
+                libero perferendis nobis, sit laborum totam odio eum illum voluptatem reiciendis sequi repellat porro quibusdam 
+                magnam consequatur nihil? Quod ducimus ea adipisci voluptatum hic. Consectetur porro ex fugiat dicta quam sunt 
+                dolorum necessitatibus. Obcaecati aperiam earum ipsum eligendi a dolores laborum eaque accusamus consectetur velit, 
+                veritatis error esse mollitia repellendus. Odit totam quibusdam, deleniti voluptates, quos quae vel sint, laboriosam 
+                qui blanditiis quo atque quod tempora animi nesciunt maiores dignissimos quam. Ea, voluptate quia magnam delectus in 
+                error eos similique! Omnis laboriosam minima repellat error nulla, earum deserunt veritatis necessitatibus vero sequi 
+                quibusdam magnam, officiis dolorum quos esse temporibus repudiandae eum debitis quam nam reprehenderit eaque. Laborum 
+                beatae vel enim illum, veritatis quasi similique corporis rem et sapiente eaque consectetur harum facere odio nisi optio 
+                dolore sed odit deserunt eos! Quis reprehenderit hic a commodi obcaecati veritatis,explicabo quibusdam dolores ab labore 
+                maxime aliquid eius tenetur dolorem cupiditate eos pariatur reiciendis.</p>
+            </div>
+          </section>
           </main>
 
           <footer>
