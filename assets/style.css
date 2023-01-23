@@ -2,8 +2,7 @@
 
 
 
-
-body {
+body, html {
 
 
 
@@ -12,6 +11,9 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
     text-align: center;
+
+
+
 
     height: 100%;
     margin: 0;
@@ -52,6 +54,7 @@ footer  {
 .Author {
    margin-left: 50px;
 }
-.about_us {
+
+#about_us {
     margin-left: 10px;
 }
