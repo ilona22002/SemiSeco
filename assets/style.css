@@ -63,5 +63,8 @@ footer  {
 .bgcolor{
     background-color: #f3e0e4;
 }
+.hr.solid{
+    border-top:3px solid#736A6C
+}
 
 
