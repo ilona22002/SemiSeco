@@ -14,8 +14,15 @@
     margin-bottom: 5px;
  }
 
+
+ .image2:hover, .image1:hover {
+    background-color: rgb(0, 0, 0);
+    color: #FFEBEF;
+ }
+
  .image2:hover {
     background-color: rgb(0, 0, 0);
+
  }
 
  img {
