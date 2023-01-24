@@ -7,14 +7,16 @@ img {
 
 
 h1 {
-    color: #FFEBEF;;
+    color: #FFEBEF;
 }
 
 h2 {
+    font-variant-caps: all-petite-caps;
+    font-weight: bold;
+    font-size: 60px;
     position: absolute  ;
     top: 30%;
     left: 30%;
-    color: #736A6C;
 }
 
 h1, h2, h3, p {
