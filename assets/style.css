@@ -10,6 +10,7 @@ body, html {
 }
 a {
     text-decoration: none;
+    
 }
 a:hover {
     color: rgb(255, 255, 255);
@@ -38,10 +39,27 @@ footer  {
     
 }
 
-.Author {
-   margin-left: 50px;
+#contact {
+    padding: 2%;
+    font-weight: lighter;
+    flex: 4;
+    text-align: left;
+    font-style: italic;
+}
+.osoite {
+    font-style: normal;
+}
+.email{
+    color: #ffebef;
+    text-decoration: underline;
+}
+.email:hover {
+    color: #B3A4A7;
+}
+.map {
+    padding: 2%;
+    flex: 8;
 }
 
-#contact {
-    margin-left: 10px;
-}
+
+
