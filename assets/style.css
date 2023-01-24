@@ -3,23 +3,12 @@
 
 
 body, html {
-
-
-
-
     background-color: #B3A4A7;
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
     text-align: center;
-
-
-
-
     height: 100%;
     margin: 0;
-
-  
-
 }
 a {
     text-decoration: none;
@@ -55,6 +44,6 @@ footer  {
    margin-left: 50px;
 }
 
-#about_us {
+#contact {
     margin-left: 10px;
 }
