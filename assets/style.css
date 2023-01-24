@@ -42,3 +42,6 @@ footer  {
 .about_us {
     margin-left: 10px;
 }
+hr.solid{ 
+    border-top: 3.5px solid #FFEBEF;
+  }
