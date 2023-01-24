@@ -45,6 +45,10 @@ footer  {
 #contact {
     margin-left: 10px;
 }
+/*menun*/
 hr.solid{ 
     border-top: 3.5px solid #FFEBEF;
   }
+.bgcolor{
+    background-color: #d9c7cb;
+    }
