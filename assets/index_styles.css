@@ -1,9 +1,10 @@
 .image1 {
     text-align: center;
     position: relative;
-    background: #736A6C;
+    background: rgb(0, 0, 0);
     overflow: hidden;
     margin-bottom: 5px;
+    color: #FFEBEF;
  }
 
  .image2 {
@@ -15,14 +16,9 @@
  }
 
 
- .image2:hover, .image1:hover {
-    background-color: rgb(0, 0, 0);
-    color: #FFEBEF;
- }
-
  .image2:hover {
     background-color: rgb(0, 0, 0);
-
+    color: #FFEBEF;
  }
 
  img {
@@ -36,14 +32,24 @@
      left: 50%;
      transform: translate(-50%, -50%);
      color: #f3e0e4;
+     
  }
- .name:hover{
+ .name:hover, .name-1:hover{
     color: #FFEBEF;
+ }
+
+ .name-1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f3e0e4;
+    font-size: 60px;
  }
 
  .description {
      position: absolute;
-     top: 65%;
+     top: 50%;
      margin-left: 50px;
      margin-right: 50px;
      font-size: 20px;
@@ -52,9 +58,8 @@
  }
  h1 {
      color: #FFEBEF;
- 
  }
  h2 {
      color: #FFEBEF;
- 
  }
+
