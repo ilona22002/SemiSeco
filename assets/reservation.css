@@ -2,7 +2,6 @@
 
 img {
    object-fit: cover;
-   opacity: 0.7;
    height: 100%;
    width: 100%;
 }
@@ -16,11 +15,24 @@ h2 {
     font-variant-caps: all-petite-caps;
     font-weight: bold;
     font-size: 60px;
+    
+}
+
+h3 {
+    font-variant-caps: all-petite-caps;
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+section {
+    display: block;
+    
 }
 
 .imgBc {
     position: relative;
     overflow: hidden;
+    filter: brightness(0.9);
 }
 
 #title {
@@ -31,13 +43,17 @@ h2 {
 }
 
 #forms {
-    background-color: #B3A4A7;
-    padding: 50px;
+    padding: 30px;
     text-align: left;
+    position: relative;
 
 }
 
 #text {
-    background-color: #B3A4A7;
-    padding: 40px;
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
 }
