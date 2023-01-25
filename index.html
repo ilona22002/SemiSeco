@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Jaffas</title>
+    <title>SemiSeco</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/index_styles.css" rel="stylesheet" type="text/css">
   </head>
 <body>
 <div class="container">
-    <a href="#"><h1 id="homepage">homepage</h1></a>
+    <a href="index.html"><h1 id="homepage">SemiSeco</h1></a>
 
     <header><nav class="navbar navbar-expand-lg navbar-color" data-bs-theme="dark">
         <div class="container-fluid">
@@ -24,55 +25,68 @@
                 <a class="nav-link" aria-current="page" href="menu.html">MENU</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">EVENTS</a>
+                <a class="nav-link" href="events.html">EVENTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
+                <a class="nav-link" aria-current="page" href="#contact">CONTACT</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  MORE
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="reservation.html">RESERVATIONS</a></li>
-                  <li><a class="dropdown-item" href="gift-card.html">GIFT CARDS</a></li>
-                </ul>
-              </li>
+              <li class="nav-item">
+                <li><a class="nav-link" href="reservation.html">RESERVATIONS</a></li>
+            </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success search-button" type="submit">Search</button>
-            </form>
+           
           </div>
         </div>
       </nav></header>
 
       <main>
         <div class="image1">
-        <h1>Name of the restaurant</h1>
-        <p>Short description of the restaurant</p>
+          <img src="assets/img/lightbulbs_and_plants.png" alt="decorative lightbulbs and green leaves">
+        <h1 class="name-1">SemiSeco</h1>
+        <p class="description">With us you can enjoy great food and live enterntainment. 
+          Our location is unique, an concretehall in Hiedanranta. The area is always been appreciated amongst the undeground folks 
+          and we are here to continue the legacy. You are welcome to come as you are and we guarantee you'll have a time of your life!
+          We offer enterntainment every week alternating from live music to always an growd favorite musavisa. Our menu is streetstyle inspired and offers something to every taste. 
+        </p>
     </div>
 
     <div class="image2">
-        <a href="menu.html"><h2>SEE THE MENU</h2></a>
+      <a href="menu.html"><img src="assets/img/dish_with_woodenspoon.png" alt="bowl of food wiht a woodenspoon"></a>
+        <a href="menu.html"><h2 class="name">SEE THE MENU</h2></a>
     </div>
 
-    <div class="image3">
-        <a href="#"><h2>SEE THE EVENTS</h2></a>
+    <div class="image2">
+       <a href="events.html"><img src="assets/img/growd_of_people.png" alt="growd of people"></a>
+        <a href="events.html"><h2 class="name">SEE EVENTS</h2></a>
     </div>
 
       </main>
       
           <footer>
-        <p>Author: <br> 
+          <div id="contact">
+          <p class="osoite">    
+          020 333 565<br>
+          <a class="email" href="#">info@semiseco.fi</a>
+          <Address>Tehdaskartanonkatu 24, 33400 Tampere</Address>
+          </p>
+          <hr>
+          <p>Author: <br> 
             Ilona Przheleskovskaia <br>
             Nelli Niemelä <br>
             Petra Puronummi <br>
             Heidi Peltola
-        </p>
-    </footer>
+            </p>
+          
+          </div>
+          <section class="map">
+            <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Tehdaskartanonkatu%2024+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="400" frameborder="0">
+              <a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe></div>
+          </section>
+        </footer>
+
   </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+
+  </body>
 </html>
