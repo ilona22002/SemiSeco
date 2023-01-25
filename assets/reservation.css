@@ -3,16 +3,26 @@ main {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 600;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 h3 {
     font-size: 35px;
 }
 
-h2, h3 {
+h4 {
+    font-size: 25px;
+}
+
+h2, h3, h4 {
     font-variant-caps: all-petite-caps;
+}
+
+b {
+    color: #736a73;
 }
 
 img {

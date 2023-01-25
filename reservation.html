@@ -31,7 +31,7 @@
                 <a class="nav-link" aria-current="page" href="#contact">CONTACT</a>
               </li>
               <li class="nav-item">
-                  <li><a class="nav-link" href="reservation.html">RESERVATIONS</a></li>
+                <a class="nav-link" href="reservation.html">RESERVATIONS</a>
               </li>
             </ul>
           </div>
@@ -42,64 +42,19 @@
 
         <div class="imgBc"><img src="assets/img/table-reservation.jpg" alt="Table reservation"></div>
 
-        <hr>
-                
         <h2>Reservation</h2>
 
-        <hr>
-
           <div class="column">
-          <div class="col-4">
-            <h3>Reservation form</h3>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name">
-
-                <br>
-
-                <label for="phone">Phone number:</label><br>
-                <input type="tel" id="phone" name="phone">
-
-                <br><br>
-                
-                <label for="meeting-time">Choose a date & time:</label><br>
-                <input type="datetime-local" id="meeting-time"
-                name="meeting-time" value="2023-01-1T00:00"
-                min="2023-01-01T00:00" max="2023-12-31T00:00">
-
-                <br><br>
-                
-                <label for="number">Number of guest:</label>
-                <select id="number" name="number">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select> 
-
-                <br><br>
-
-                  <label for="message">More information:</label> <br>
-                  <textarea id="message" name="message" rows="10" cols="30"></textarea> 
-                  
-                  <br>
-
-                <input type="submit" value="Submit">
-            </form>
-          </div>
-
+        
             <div class="col-8">
               <h3>WELCOME TO SemiSeco!</h3>
-              <p id="space"> From the "Reservation form" box above you can make an online reservation to our restaurant.
+              <p id="space"> From the <b>"Reservation form"</b> box above you can make an online reservation to our restaurant.<br><br>
+
+                Special diets? Allergies? Accessibility for a disabled person? High chairs for babies? <br>
+                Whatever you need please let us know during the booking process so we can make you feel at home.
                 <br><br>
                 For any information of booking please contact us at <b>info@semiseco.fi - 020 333 565.</b>
-                <br><br>                
+                <br>                 
                 (Please notice possible exceptions in opening hours)</p> 
 
                 <h3>EXCEPTIONS IN OPENING HOURS</h3>
@@ -114,28 +69,76 @@
                   14.5.2023 12.00 - 22.00<br>
                   18.5.2023 14.00 - 00.30</p>
             </div>
+
+            <div class="col-4">
+              <h3>Reservation form</h3>
+              <form>
+                  <label for="name">Name:</label><br>
+                  <input type="text" id="name" name="name">
+  
+                  <br>
+  
+                  <label for="phone">Phone number:</label><br>
+                  <input type="tel" id="phone" name="phone">
+  
+                  <br><br>
+                  
+                  <label for="meeting-time">Choose a date & time:</label><br>
+                  <input type="datetime-local" id="meeting-time"
+                  name="meeting-time">
+  
+                  <br><br>
+                  
+                  <label for="number">Number of guest:</label>
+                  <select id="number" name="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select> 
+  
+                  <br><br>
+  
+                    <label for="message">More information:</label> <br>
+                    <textarea id="message" name="message" rows="10" cols="30"></textarea> 
+                    
+                    <br>
+  
+                  <input type="submit" value="Submit">
+              </form>
+            </div>
+  
+
           </div>
       </main>
       
       <footer>
         <div id="contact">
-        <p class="osoite">    
-        020 333 565<br>
-        <a class="email" href="#">info@semiseco.fi</a>
-        <Address>Tehdaskartanonkatu 24, 33400 Tampere</Address>
-        </p>
-        <hr>
-        <p>Author: <br> 
-          Ilona Przheleskovskaia <br>
-          Nelli Niemelä <br>
-          Petra Puronummi <br>
-          Heidi Peltola
+          <p class="osoite">    
+            020 333 565<br>
+            <a class="email" href="#">info@semiseco.fi</a>
+            <address>Tehdaskartanonkatu 24, 33400 Tampere</address>
           </p>
-        
+
+          <hr>
+
+          <p>
+            Author: <br> 
+            Ilona Przheleskovskaia <br>
+            Nelli Niemelä <br>
+            Petra Puronummi <br>
+            Heidi Peltola
+          </p>        
         </div>
-      <div class="map">
-        <div>
-          <iframe src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Tehdaskartanonkatu%2024+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+
+        <div class="map">
+          <iframe src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Tehdaskartanonkatu%2024+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
       </footer>
 
