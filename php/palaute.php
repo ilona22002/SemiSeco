@@ -12,7 +12,7 @@ try{
     $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
 }
 catch(Exception $e){
-    header("Location:../html/yhteysvirhe.html");
+    header("Location:.yhteysvirhe.html");
     exit;
 }
 
