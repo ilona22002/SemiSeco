@@ -1,0 +1,24 @@
+h2 {
+    text-align: center;
+    font-size: 40px;  
+    padding-bottom: 40px; 
+}
+
+.bgcolor {
+    padding: 60px;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+}
+
+#userlomake {
+    display: inline-block;
+    text-align: left;
+}
+
+.nav-link:nth-last-child(1) {
+    display: inline-block;
+    text-align: right;
+}
