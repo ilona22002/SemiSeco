@@ -4,48 +4,55 @@ img {
    width: 100%;
 }
 
-
-h1 {
-    color: #FFEBEF;
+h2, h3, h4 {
+    text-transform: uppercase;
 }
 
-h2 {
-    font-variant-caps: all-petite-caps;
-    font-weight: bold;
-    font-size: 60px;
-    padding: 40px;
-    
+h2{
+    text-align: center;
+    font-size: 40px;  
+    padding-bottom: 40px;  
+}
+
+h3, h4 {
+    padding-top: 40px;
+    font-size: 25px;
 }
 
 h3 {
-    font-variant-caps: all-petite-caps;
-    padding-top: 40px;
-    font-size: 40px;
+    padding-bottom: 10px
 }
 
-section {
-    display: block;
-    
-}
-
-.imgBc {
-    position: relative;
-    overflow: hidden;
-    filter: brightness(0.9);
-}
-
-#forms {
-    padding: 40px;
+h4 {
     text-align: left;
-    position: relative;
-
+    margin-left: 40px;
+    padding-bottom: 8px;
 }
 
-#text {
-    display: block;
-    position: relative;
-    text-align: center;
-    padding-top: 30px;
-    padding-right: 60px;
-    padding-left: 60px;
+.space {
+    padding: 80px;
+}
+
+.row {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.column-left, .column-right {
+    flex: 50%;
+    height: 100%; 
+}
+
+#reservation {
+    padding-left: 50px;
+    text-align: left;
+}
+
+#color {
+    color: #736A6C;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
 }
