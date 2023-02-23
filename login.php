@@ -14,9 +14,9 @@ try{
     $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
 }
 catch(Exception $e){
-    print "Connection error";
+    header("Location:.yhteysvirhe.html");
     exit;
-}
+  }
 
 //Tehdään sql-lause, jossa kysymysmerkeillä osoitetaan paikat
 //joihin laitetaan muuttujien arvoja
