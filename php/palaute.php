@@ -26,7 +26,7 @@ if (!empty($palaute)) {
     mysqli_stmt_bind_param($stmt, 'sssss', $etunimi, $sukunimi, $puh, $email, $palaute);
     //Suoritetaan sql-lause
     mysqli_stmt_execute($stmt);
-    header("Location:/Fast-Jaffas/kiitos.html");
+    header("Location:kiitos.php");
     exit;
 }
 

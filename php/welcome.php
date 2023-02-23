@@ -7,6 +7,17 @@ if (!isset($_SESSION["kayttaja"])){
 //include "./html/header.html";
 print "<h2>Welcome, ".$_SESSION["kayttaja"]."!</h2>";
 
+mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
+
+try{
+    //muuttuja joka luo yhteyden tietokantaan "henkilokanta"
+    $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
+}
+catch(Exception $e){
+    header("Location:.yhteysvirhe.html");
+    exit;
+}
+
 print "<table border='1'>";
 $sql="select * from palaute where julkinen=1";
 // Jos kirjautunut niin näkee kaikki palautteet:
@@ -17,7 +28,7 @@ if (isset($_SESSION["kayttaja"])){
 
 $tulos=mysqli_query($yhteys, $sql);
 while ($rivi=mysqli_fetch_object($tulos)){
-    print "<tr><td>$rivi->etunimi <td>$rivi->sukunimi <td>$rivi->sahkoposti <td>$rivi->palaute ";
+    print "<tr><td>$rivi->etunimi <td>$rivi->sukunimi <td>$rivi->puhelinnumero <td>$rivi->sahkoposti <td>$rivi->palaute ";
 
 
     // Koodin testaukseen ilman kirjautumista:
@@ -35,13 +46,13 @@ if (isset($_SESSION["kayttaja"])){
 
 //lajittelu id:n mukaan ?? miten tehdä
 
-print"<table>";
+print"</table>";
 
 //Suljetaan tietokantayhteys
 mysqli_close($yhteys);
 ?>
 
-<a href="./logout.php">Log out</a>
+<a href="../logout.php">Log out</a>
 <?php
 //include "./html/footer.html";
 ?>
