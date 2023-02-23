@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SemiSeco reservation form and more information about making reservation.">
+    <meta name="keywords" content="restaurant, food, drinks, family, eat, SemiSeco, reservation, events, menu, contact, log in">
+    <meta name="author" content="Fast-Jaffas - Ilona Przheleskovskaia">
     <title>SemiSeco - reservations</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="assets/style.css" rel="stylesheet" type="text/css">
@@ -33,77 +36,110 @@
               <li class="nav-item">
                   <li><a class="nav-link" href="reservation.html">RESERVATIONS</a></li>
               </li>
+              <li class="nav-item">
+                <li><a class="nav-link" href="login.html">LOG IN</a></li>
+              </li>
             </ul>
           </div>
         </div>
       </nav></header>
 
+    <div class="bgcolor">
       <main>
 
-        <div class="imgBc"><img src="assets/img/table-reservation.jpg" alt="Table reservation"></div>
+
+      <img src="assets/img/table-reservation.jpg" alt="Table Reservation">
+        
+        <div class="space">
+          <h2>RESERVATION</h2>
+
+       <div class="imgBc"><img src="assets/img/table-reservation.jpg" alt="Table reservation"></div>
                 
         <h2>Reservation</h2>
+
               
-            <section class="row">
-            <div class="col-4">
-              <h4>Reservation form</h4>
-            <form id="forms" action="/action_page.php">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name">
-                <br>
+            <div class="row">
+              <div class="column-left">
+                <h4>RESERVATION FORM</h4>
+                  <form id="reservation" action="/action_page.php">
+                      <label for="name">Full name:</label><br>
+                      <input type="text" id="name" name="name">
+                      <br>
 
-                <label for="phone">Phone number:</label><br>
-                <input type="tel" id="phone" name="phone">
-                <br><br>
-                
-                <label for="meeting-time">Choose a date & time:</label><br>
-                <input type="datetime-local" id="meeting-time"
-                name="meeting-time" value="2023-01-1T00:00"
-                min="2023-01-01T00:00" max="2023-12-31T00:00">
+                      <label for="phone">Phone number:</label><br>
+                      <input type="tel" id="phone" name="phone">
+                      <br><br>
+                      
+                      <label for="meeting-time">Choose a date & time:</label><br>
+                      <input type="datetime-local" id="meeting-time"
+                      name="meeting-time" value="2023-01-1T00:00"
+                      min="2023-01-01T00:00" max="2023-12-31T00:00">
 
-                <br><br>
-                
-                <label for="number">Number of guest:</label>
-                <select id="number" name="number">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                </select> 
-                <br><br>
+                      <br><br>
+                      
+                      <label for="number">Number of guest:</label>
+                      <select id="number" name="number">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        
+                      </select> 
+                      <br><br>
 
-                  <label for="message">More information:</label> <br>
-                  <textarea id="message" name="message" rows="10" cols="38"></textarea> <br>
-                  
+                        <label for="message">More information:</label> <br>
+                        <textarea id="message" name="message" rows="10" cols="28"></textarea> <br>
+                        
 
-                <input type="submit" value="Submit">
-            </form>
-          
-            
-          
-            </div>
+                      <input type="submit" value="Submit">
+                    </form>
+              </div>
 
-            <div class="col-8">
-              <h3 id="text">Welcome to SemiSeco!</h3>
-              <p id="text">Odit totam quibusdam, deleniti voluptates, quos quae vel sint, laboriosam 
-                qui blanditiis quo atque quod tempora animi nesciunt maiores dignissimos quam. Ea, voluptate quia magnam delectus in 
-                error eos similique! Omnis laboriosam minima repellat error nulla, earum deserunt veritatis necessitatibus vero sequi 
-                quibusdam magnam, officiis dolorum quos esse temporibus repudiandae eum debitis quam nam reprehenderit eaque.
-                <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Minus quasi recusandae eligendi vitae. Quam ducimus, iusto eius nemo explicabo maxime.</p> 
-            </div>
-          </section>
-
+              <div class="column-right">
+                <h3>Welcome to SemiSeco!</h3>
+                  <p>From the <b id="color">"Reservation form"</b> box above you can make an online reservation to our restaurant.</p>
+                  <p><i>Special diets? Allergies? Accessibility for a disabled person? High chairs for babies?</i><br>
+                     Whatever you need please let us know during the booking process so we can make you feel at home.</p>
+                  <p>For any information of booking please contact us at: <br><b id="color">info@semiseco.fi - 020 333 565</b></p>
+              
+                <h3>Exceptions in opening hours</h3>
+                  <ul>
+                    <ol>6.1.2023 14.00 - 00.30</ol>
+                    <ol>7.4.2023 14.00 - 00.30</ol>
+                    <ol>8.4.2023 14.00 - 00.30</ol>
+                    <ol>9.4.2023 14.00 - 00.30</ol>
+                    <ol>10.4.2023 CLOSED</ol>
+                    <ol>11.4.2023 16.00 - 00.30</ol>
+                    <ol>30.4.2023 14.00 - 00.30</ol>
+                    <ol>1.5.2023 12.00 - 22.00</ol>
+                    <ol>14.5.2023 12.00 - 22.00</ol>
+                    <ol>18.5.2023 14.00 - 00.30</ol>
+                  </ul>
+              </div>
+            </div>  
+        </div>
       </main>
+    </div>
+
       <footer>
         <div id="contact">
+
+          <p class="osoite">    
+          020 333 565<br>
+          <a class="email" href="#">info@semiseco.fi</a>
+          <Address>Tehdaskartanonkatu 24, 33400 Tampere</Address>
+
         <p class="osoite">    
         020 333 565<br>
         <a class="email" href="#">info@semiseco.fi</a>
         <Address>Tehdaskartanonkatu 24, 33400 Tampere</Address>
+        <a class="nav-link" href="palaute.html"><u>Give us feedback here!</u></a>
         </p>
         <hr>
         <p>Author: <br> 
@@ -111,17 +147,22 @@
           Nelli Niemelä <br>
           Petra Puronummi <br>
           Heidi Peltola
+
           </p>
-        
+          <hr>
+          <p>Author: <br> 
+            Ilona Przheleskovskaia <br>
+            Nelli Niemelä <br>
+            Petra Puronummi <br>
+            Heidi Peltola
+            </p>
         </div>
         <section class="map">
           <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Tehdaskartanonkatu%2024+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="400" frameborder="0">
             <a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe></div>
         </section>
       </footer>
-
   </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
