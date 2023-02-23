@@ -52,7 +52,7 @@
           
           while ($rivi=mysqli_fetch_object($tulos)){
                print "<tr>";
-               print "<td>$rivi->id<td>$rivi->etunimi<td>$rivi->sukunimi<td>$rivi->puhelinnumero<td>$rivi->sahkoposti<td>$rivi->palaute";
+               print "<td>$rivi->palaute";
            }
            print "</table>";
           
