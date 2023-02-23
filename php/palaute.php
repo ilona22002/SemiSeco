@@ -29,18 +29,7 @@ if (!empty($palaute)) {
     header("Location:/Fast-Jaffas/kiitos.html");
     exit;
 }
-//tulostetaan kiitoslomke
 
-
-//kokeillaan tulostaa tietokannan sisältö niin tiedetään toimiiko koodi
-// $tulos=mysqli_query($yhteys, "select * from palaute");
-// print "<table border='1'>";
-
-// while ($rivi=mysqli_fetch_object($tulos)){
-//     print "<tr>";
-//     print "<td>$rivi->id<td>$rivi->etunimi<td>$rivi->sukunimi<td>$rivi->puhelinnumero<td>$rivi->sahkoposti<td>$rivi->palaute";
-// }
-// print "</table>";
-
+//Suljetaan tietokantayhteys
 mysqli_close($yhteys);
 ?>
