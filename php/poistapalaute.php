@@ -2,7 +2,7 @@
   $poistettava = isset($_GET["poistettava"]) ? $_GET["poistettava"] : "";
 
   if (empty($poistettava)){
-    header("Location:palaute.php");
+    header("Location:welcome.php");
     exit;
   }
 
@@ -29,7 +29,7 @@
   //Suljetaan tietokantayhteys
   mysqli_close($yhteys);
 
-  header("Location:palaute.php");
+  header("Location:welcome.php");
   exit;
 ?>
 

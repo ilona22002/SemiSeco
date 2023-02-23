@@ -3,7 +3,7 @@ $muokattava=isset($_GET["muokattava"]) ? $_GET["muokattava"] : "";
 
 //Jos tietoa ei ole annettu, palataan listaukseen
 if (empty($muokattava)){
-    header("Location:./palaute.php");
+    header("Location:welcome.php");
     exit;
 }
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);

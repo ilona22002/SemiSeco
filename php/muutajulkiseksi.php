@@ -3,7 +3,7 @@ $julkaistava=isset($_GET["julkaistava"]) ? $_GET["julkaistava"] : "";
 
 //Jos tietoa ei ole annettu, palataan listaukseen
 if (empty($julkaistava)){
-    header("Location:./palaute.php");
+    header("Location:welcome.php");
     exit;
 }
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
@@ -21,7 +21,7 @@ mysqli_stmt_bind_param($stmt, 'i', $julkaistava);
 //Suoritetaan sql-lause
 mysqli_stmt_execute($stmt);
 mysqli_close($yhteys);
-    header("Location:palaute.php");
+    header("Location:welcome.php");
     exit;
 ?>
 

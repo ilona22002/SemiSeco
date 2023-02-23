@@ -10,7 +10,7 @@ $palaute=isset($_POST["palaute"]) ? $_POST["palaute"] : 0;
 //Jos ei jompaa kumpaa tai kumpaakaan tietoa ole annettu
 //ohjataan pyyntö takaisin lomakkeelle
 if (empty($etunimi) || empty($sukunimi) || empty($id) || empty($sahkoposti) || empty($palaute)){
-    header("Location:./palaute.php");
+    header("Location:welcome.php");
     exit;
 }
 
@@ -21,7 +21,7 @@ try{
     $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
 }
 catch(Exception $e){
-    header("Location:./palaute.php");
+    header("Location:welcome.php");
     exit;
 }
 
@@ -38,5 +38,5 @@ mysqli_stmt_execute($stmt);
 //Suljetaan tietokantayhteys
 mysqli_close($yhteys);
 
-header("Location:./palaute.php");
+header("Location:welcome.php");
 ?>
