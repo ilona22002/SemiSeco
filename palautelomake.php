@@ -46,7 +46,38 @@
        
         <h2>Previous customers report that..</h2>
         <div id="palautteet">
-            tähän annetut palautteet tietokannasta
+        
+        <?php
+
+try{
+  //muuttuja joka luo yhteyden tietokantaan "henkilokanta"
+  $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
+}
+catch(Exception $e){
+  header("Location:.yhteysvirhe.html");
+  exit;
+}
+
+$tulos=mysqli_query($yhteys, "select * from palaute where julkinen=1");
+print "<table border='1'>";
+
+while ($rivi=mysqli_fetch_object($tulos)){
+     print "<tr>";
+     print "<td>$rivi->id<td>$rivi->etunimi<td>$rivi->sukunimi<td>$rivi->puhelinnumero<td>$rivi->sahkoposti<td>$rivi->palaute";
+ }
+ print "</table>";
+
+//        print "<table border='1'>";
+//        //$sql="select * from palaute where julkinen=1";
+
+//      $tulos=mysqli_query($yhteys, "select * from palaute where julkinen=1");
+//      while ($rivi=mysqli_fetch_object($tulos)){
+//      print "<tr><td>$rivi->palaute ";
+//      }
+
+mysqli_close($yhteys);
+?>
+        
         </div>
 
         <h3>Give us feedback using the form below!</h3>
