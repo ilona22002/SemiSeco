@@ -108,6 +108,7 @@ mysqli_close($yhteys);
           <a class="email" href="#">info@semiseco.fi</a>
           <Address>Tehdaskartanonkatu 24, 33400 Tampere</Address>
           <a class="nav-link" href="#palautteet"><u>Give us feedback here!</u></a>
+          <a class="nav-link" href="login.html"><u>Log in</u></a>
           </p>
           <hr>
           <p>Author: <br> 
