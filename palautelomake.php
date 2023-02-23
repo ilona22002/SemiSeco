@@ -1,3 +1,14 @@
+<?php
+try{
+  //muuttuja joka luo yhteyden tietokantaan "henkilokanta"
+  $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
+}
+catch(Exception $e){
+  header("Location:.yhteysvirhe.html");
+  exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,17 +58,8 @@
         <h2>Previous customers report that..</h2>
         <div id="palautteet">
         
-        <?php
 
-try{
-  //muuttuja joka luo yhteyden tietokantaan "henkilokanta"
-  $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
-}
-catch(Exception $e){
-  header("Location:.yhteysvirhe.html");
-  exit;
-}
-
+<?php
 $tulos=mysqli_query($yhteys, "select * from palaute where julkinen=1");
 print "<table border='1'>";
 
