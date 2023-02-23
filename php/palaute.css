@@ -25,7 +25,7 @@ h3{
   }
 
   
-  input[type=submit] {
+  input[type=submit], .linkki {
     background-color: #d9c7cb;
     color: black;
     padding: 12px 20px;
@@ -40,4 +40,4 @@ h3{
   ::placeholder{
     text-align: center;
   }
-  
+

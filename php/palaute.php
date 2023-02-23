@@ -26,20 +26,21 @@ if (!empty($palaute)) {
     mysqli_stmt_bind_param($stmt, 'sssss', $etunimi, $sukunimi, $puh, $email, $palaute);
     //Suoritetaan sql-lause
     mysqli_stmt_execute($stmt);
-    header("Location:./palaute.php");
+    header("Location:./kiitos.html");
     exit;
 }
+//tulostetaan kiitoslomke
+
 
 //kokeillaan tulostaa tietokannan sisältö niin tiedetään toimiiko koodi
-$tulos=mysqli_query($yhteys, "select * from palaute");
-print "<table border='1'>";
+// $tulos=mysqli_query($yhteys, "select * from palaute");
+// print "<table border='1'>";
 
-while ($rivi=mysqli_fetch_object($tulos)){
-    print "<tr>";
-    print "<td>$rivi->id<td>$rivi->etunimi<td>$rivi->sukunimi<td>$rivi->puhelinnumero<td>$rivi->sahkoposti<td>$rivi->palaute";
-}
-print "</table>";
-
+// while ($rivi=mysqli_fetch_object($tulos)){
+//     print "<tr>";
+//     print "<td>$rivi->id<td>$rivi->etunimi<td>$rivi->sukunimi<td>$rivi->puhelinnumero<td>$rivi->sahkoposti<td>$rivi->palaute";
+// }
+// print "</table>";
 
 mysqli_close($yhteys);
 ?>
