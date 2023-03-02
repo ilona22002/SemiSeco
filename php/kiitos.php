@@ -61,7 +61,6 @@ catch(Exception $e){
         <div id="palautteet">
           <?php
           $tulos=mysqli_query($yhteys, "select * from palaute where julkinen=1");
-          print "<table border='1'>";
           
           while ($rivi=mysqli_fetch_object($tulos)){
                print "<tr>";
