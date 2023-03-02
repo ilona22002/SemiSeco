@@ -9,7 +9,7 @@ mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 
 try{
     //muuttuja joka luo yhteyden tietokantaan "henkilokanta"
-    $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
+    $yhteys=mysqli_connect("localhost", "trtkp22a3", "trtkp22816", "trtkp22a3");
 }
 catch(Exception $e){
     header("Location:.yhteysvirhe.html");
@@ -18,7 +18,7 @@ catch(Exception $e){
 
 if (!empty($palaute)) {
 
-    $sql="insert into palaute (etunimi, sukunimi, puhelinnumero, sahkoposti, palaute) values(?, ?, ?, ? ,?)";
+    $sql="insert into ryhma17_palautteet (etunimi, sukunimi, puhelinnumero, sahkoposti, palaute) values(?, ?, ?, ? ,?)";
 
     //Valmistellaan sql-lause
     $stmt=mysqli_prepare($yhteys, $sql);

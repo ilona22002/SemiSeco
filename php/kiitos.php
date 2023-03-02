@@ -3,7 +3,7 @@ mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 
 try{
     //muuttuja joka luo yhteyden tietokantaan "henkilokanta"
-    $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
+    $yhteys=mysqli_connect("localhost", "trtkp22a3", "trtkp22816", "trtkp22a3");
 }
 catch(Exception $e){
     header("Location:.yhteysvirhe.html");
@@ -60,7 +60,7 @@ catch(Exception $e){
         <h2>Previous customers report that..</h2>
         <div id="palautteet">
           <?php
-          $tulos=mysqli_query($yhteys, "select * from palaute where julkinen=1");
+          $tulos=mysqli_query($yhteys, "select * from ryhma17_palautteet where julkinen=1");
           print "<table border='1'>";
           
           while ($rivi=mysqli_fetch_object($tulos)){

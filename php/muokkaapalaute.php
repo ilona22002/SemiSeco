@@ -8,13 +8,13 @@ if (empty($muokattava)){
 }
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 try{
-    $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
+    $yhteys=mysqli_connect("localhost", "trtkp22a3", "trtkp22816", "trtkp22a3");
 }
 catch(Exception $e){
     header("Location:yhteysvirhe.html");
     exit;
 }
-$sql="select * from palaute where id=?";
+$sql="select * from ryhma17_palautteet where id=?";
 $stmt=mysqli_prepare($yhteys, $sql);
 //Sijoitetaan muuttuja sql-lauseeseen
 mysqli_stmt_bind_param($stmt, 'i', $muokattava);

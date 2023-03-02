@@ -9,14 +9,14 @@
   mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
   
   try{
-    $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
+    $yhteys=mysqli_connect("localhost", "trtkp22a3", "trtkp22816", "trtkp22a3");
   }
   catch(Exception $e){
     header("Location:yhteysvirhe.html");
     exit;
   }
   
-  $sql="delete from palaute where id=?";
+  $sql="delete from ryhma17_palautteet where id=?";
   
   // mihin henkilo muutetaan? palaute?
 

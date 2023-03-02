@@ -18,7 +18,7 @@ mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 // mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try{
-    $yhteys=mysqli_connect("db", "root", "password", "ryhma17_palautteet");
+    $yhteys=mysqli_connect("localhost", "trtkp22a3", "trtkp22816", "trtkp22a3");
 }
 catch(Exception $e){
     header("Location:welcome.php");
@@ -27,7 +27,7 @@ catch(Exception $e){
 
 //Tehdään sql-lause, jossa kysymysmerkeillä osoitetaan paikat
 //joihin laitetaan muuttujien arvoja
-$sql="update palaute set etunimi=?, sukunimi=?, sahkoposti=?, palaute=?, where id=?";
+$sql="update ryhma17_palautteet set etunimi=?, sukunimi=?, sahkoposti=?, palaute=?, where id=?";
 
 //Valmistellaan sql-lause
 $stmt=mysqli_prepare($yhteys, $sql);
