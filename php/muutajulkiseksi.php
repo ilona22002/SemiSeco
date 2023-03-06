@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION["ryhma17_kayttaja"])){
+    header("Location:./login.php");
+    exit;
+}
 $julkaistava=isset($_GET["julkaistava"]) ? $_GET["julkaistava"] : "";
 
 //Jos tietoa ei ole annettu, palataan listaukseen

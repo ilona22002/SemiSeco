@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION["ryhma17_kayttaja"])){
+    header("Location:./login.php");
+    exit;
+}
 //Luetaan lomakkeelta tulleet tiedot funktiolla $_POST
 //jos syötteet ovat olemassa
 $id=isset($_POST["id"]) ? $_POST["id"] : "";

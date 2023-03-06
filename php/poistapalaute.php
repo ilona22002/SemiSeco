@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION["ryhma17_kayttaja"])){
+    header("Location:./login.php");
+    exit;
+}
   $poistettava = isset($_GET["poistettava"]) ? $_GET["poistettava"] : "";
 
   if (empty($poistettava)){

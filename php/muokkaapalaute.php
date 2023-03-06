@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION["ryhma17_kayttaja"])){
+    header("Location:./login.php");
+    exit;
+}
 $muokattava=isset($_GET["muokattava"]) ? $_GET["muokattava"] : "";
 
 //Jos tietoa ei ole annettu, palataan listaukseen
