@@ -22,7 +22,7 @@ print "<table border='1'>";
 $sql="select * from ryhma17_palautteet where julkinen=1";
 // Jos kirjautunut niin näkee kaikki palautteet:
 if (isset($_SESSION["ryhma17_kayttaja"])){
-    $sql="select * from palaute";
+    $sql="select * from ryhma17_palautteet";
 
   }
 

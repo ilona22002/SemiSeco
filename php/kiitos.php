@@ -84,7 +84,7 @@ catch(Exception $e){
         <h3>
             Thank your feedback!
         </h3>
-        <a class="linkki" link href="index.html">Front Page</a>
+        <a class="linkki" link href="../index.html">Front Page</a>
        
        </div>
       </main>
