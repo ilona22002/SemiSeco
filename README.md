@@ -18,6 +18,4 @@ As part of a **school team project**, we were tasked with designing and developi
 🔹 Explored **containerization** using Docker for development environments  
 🔹 Improved **WordPress customization** for content-driven websites  
 
-This project was a great **learning experience**, helping us understand the **workflow of web development** while applying industry-standard tools and best practices. 🚀  
-
-Would you like me to refine or expand any part of it? 😊
+This project was a great **learning experience**, helping us understand the **workflow of web development** while applying industry-standard tools and best practices. 🚀 
